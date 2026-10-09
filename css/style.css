@@ -165,3 +165,42 @@ border: 0.5px solid #ddd;
 1.6; }
 .modal-info b { color: #1a1a18; }
 
+.historico-container {
+    margin-top: 20px;
+    background: #222;
+    padding: 15px;
+    border-radius: 8px;
+    color: #fff;
+}
+.historico-vazio {
+    color: #aaa;
+    font-size: 14px;
+    text-align: center;
+}
+.historico-item {
+    background: #333;
+    margin-bottom: 8px;
+    padding: 10px;
+    border-radius: 6px;
+    border-left: 5px solid #ccc;
+    font-size: 13px;
+}
+.historico-item.ganhou { border-left-color: #2e7d32; }
+.historico-item.perdeu { border-left-color: #c62828; }
+
+.historico-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.historico-tag { color: #ffb300; }
+.historico-item.ganhou .historico-resultado { color: #4caf50; }
+.historico-item.perdeu .historico-resultado { color: #f44336; }
+
+.historico-detalhes, .historico-valores {
+    display: flex;
+    justify-content: space-between;
+    color: #ddd;
+}
+.historico-item.ganhou .valor-resultado { color: #4caf50; font-weight: bold; }
